@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <InputTodo/>
-      <ListTodo/>
+      <ListTodo/> 
     </>
   )
 }

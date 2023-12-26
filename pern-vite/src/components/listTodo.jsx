@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 import axios from 'axios'
+import EditTodo from "./editTodo";
 
 
 function ListTodo(){
@@ -64,7 +65,7 @@ function ListTodo(){
             {todos.map((container) => (
     <tr key={container.todo_id}>
         <td>{container.description}</td>
-        <td><button className="btn btn-primary">Edit</button></td>
+        <td><EditTodo todo={container}/></td>
         <td><button className="btn btn-danger" onClick={() => deleteTodos(container.todo_id)}>Delete</button></td>
         {/* Add Edit and Delete buttons here */}
     </tr>
