@@ -13,6 +13,7 @@ function EditTodo({todo}) {
 
   const closeModal = () => {
     setModalOpen(false);
+    setDescription(todo.description);
   };
 
 
@@ -45,7 +46,7 @@ function EditTodo({todo}) {
           <div className="modal-dialog">
             <div className="modal-content">
               <div className="modal-header">
-                <button type="button" className="close btn btn-danger" onClick={closeModal}>
+                <button type="button" className="close btn btn-danger" onClick={closeModal}> 
                   &times;
                 </button>
                 <h4 className="modal-title">Edit Todo</h4>

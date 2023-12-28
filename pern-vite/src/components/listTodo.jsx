@@ -67,7 +67,6 @@ function ListTodo(){
         <td>{container.description}</td>
         <td><EditTodo todo={container}/></td>
         <td><button className="btn btn-danger" onClick={() => deleteTodos(container.todo_id)}>Delete</button></td>
-        {/* Add Edit and Delete buttons here */}
     </tr>
 ))}
                 
